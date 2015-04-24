@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Kingdom Hearts Timeline -- Ben Wilcox's Web Portfolio</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!-- header bar -->
+        <header class="main-header">
+            <a href="index.html"><h2 class="main-header__title">Ben Wilcox</h2></a>
+            <div class="main-header__menu contact-list">
+                <!--<p>find me on</p>-->
+                <a class="contact-list__button" href="https://linkedin.com/in/benwilcox93/en">linkedin</a>
+                <!--<a href="https://twitter.com/reccanti">twitter</a>-->
+                <a class="contact-list__button" href="http://codepen.io/recanti/">codepen</a>
+                <a class="contact-list__button" href="https://github.com/recanti">github</a>
+                <a class="contact-list__button" href="https://behance.net/reccanti">behance</a>
+            </div>
+            <div class="spacer"></div>
+        </header>
+        <article class="main-content">
+            <h2>Kingdom Hearts Timeline</h2>
+            <p>
+                This Kingdom Hearts timeline was part of a project I did for another class. It displays the games in the series in both release order, and chronological order. I wanted to make this web-app because when people ask me about the series, they are often confused as to the order of the series. This was made to provide an easy way to see where each game in the series takes place.
+            </p>
+            <p>
+                The data for each game was stored in a JSON file. The file was loaded with AJAX and javascript was used to sort them based on their release order, or their chronological order. Pressing a button would change this ordering, which was visually depicted using a CSS transition. Button presses utilized the EventEmitter library.
+            </p>
+            <img src="images/views/KingdomHearts.png" alt="Kingdom Hearts Timeline image" width=960 height=489 />
+            <a href="index.html#projects">back to projects</a>
+        </article>
+        <footer class="main-footer">
+            &copy; 2015 Ben Wilcox
+        </footer>
+    </body>
+</html>

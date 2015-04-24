@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Sketchnotes -- Ben Wilcox's Web Portfolio</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!-- header bar -->
+        <header class="main-header">
+            <a href="index.html"><h2 class="main-header__title">Ben Wilcox</h2></a>
+            <div class="main-header__menu contact-list">
+                <!--<p>find me on</p>-->
+                <a class="contact-list__button" href="https://linkedin.com/in/benwilcox93/en">linkedin</a>
+                <!--<a href="https://twitter.com/reccanti">twitter</a>-->
+                <a class="contact-list__button" href="http://codepen.io/recanti/">codepen</a>
+                <a class="contact-list__button" href="https://github.com/recanti">github</a>
+                <a class="contact-list__button" href="https://behance.net/reccanti">behance</a>
+            </div>
+            <div class="spacer"></div>
+        </header>
+        <article class="main-content">
+            <h2>Sketchnotes Tutorial</h2>
+            <p>
+                I use sketchnotes for all of my classes. They're a lot of fun to make and the experience is a lot more engaging than regular note-taking. I decided to use this as a the topic of a tutorial site I made as part of a class assignment. 
+            </p>
+            <p>
+                The site uses only HTML and CSS. My goal when making this site was to make the structure as legible as possible. I tried to avoid using generic elements like divs, when possible in favor of semantic HTML5 tags. I also tried to avoid presentation hacks that would make the order of content in the document different than the order it was presented in. I initially had the asides appear first in the section, but I focused on finding a CSS solution that would allow me to put them last.
+            </p>
+            <p>
+                Since it was a basic site, I made use of a simple responsive design. Most content scales with the screen up to 960 pixels. Sidenotes are floated next to the main content and have rounded edges, but lose this when the screen reaches below 768 pixels. The navigation also switches from a horizontal layout to a vertical layout at this point.
+            </p>
+            <img src="images/views/Sketchnotes1.png" alt="one sketchnotes website image" width="960" height="494" />            
+            <img src="images/views/Sketchnotes2.png" alt="another sketchnotes website image" width="960" height="498" />
+            <a href="index.html#projects">back to projects</a>
+        </article>
+        <footer class="main-footer">
+            &copy; 2015 Ben Wilcox
+        </footer>
+    </body>
+</html>

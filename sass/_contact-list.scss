@@ -1,0 +1,41 @@
+.contact-list {
+    clear: both;
+    font-size: 14pt;
+}
+    
+
+.contact-list__label {
+    color: $white;
+}
+
+.contact-list__button {
+    display: inline-block;
+    //line-height: 100px;
+    //vertical-align: middle;
+    width: 100px;
+    color: $green;
+    
+    font-weight: 600;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: $mid-width) {
+    
+    .contact-list__button {
+        //line-height: 50px;
+    }
+    
+    
+}
+
+@media (max-width: $small-width) {
+
+    .contact-list__button {
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+}

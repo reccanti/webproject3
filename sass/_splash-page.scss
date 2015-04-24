@@ -1,0 +1,33 @@
+.splash {
+}
+
+.splash__title {
+    color: $green;
+    text-align: center;
+    font-size: 75pt;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.splash__tagline {
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 100px;
+}
+
+@media (max-width: $mid-width) {
+
+    .splash__title {
+        text-align: center;
+        font-size: 50pt;
+    }
+}
+
+@media (max-width: $small-width) {
+
+    .splash__title {
+        text-align: center;
+        font-size: 30pt;
+    }
+}
