@@ -11,8 +11,14 @@ body {
     background-color: $white;
 }
 
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 a {
     text-decoration: none;
+    color: $green;
 }
 
 

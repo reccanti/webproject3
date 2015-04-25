@@ -9,8 +9,13 @@
 body {
   background-color: #FAFAFA; }
 
+p {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #44E3BB; }
 
 .main-header {
   background-color: #333333;
@@ -27,7 +32,7 @@ a {
   font-size: 25pt;
   float: left; }
   .main-header__title:hover {
-    color: #9CEDBB; }
+    color: #44E3BB; }
 
 .main-header__menu {
   font-size: 14pt;
@@ -52,13 +57,60 @@ a {
   margin: 0 auto;
   max-width: 960px; }
 
+.main-content p {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.main-content__title {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 .main-footer {
   background-color: #333333;
   color: #FAFAFA;
-  height: 50px;
-  line-height: 50px;
+  vertical-align: middle;
+  padding: 10px; }
+
+.main-footer__menu {
+  font-size: 14pt;
+  line-height: 100px;
   vertical-align: middle; }
 
+@media (max-width: 760px) {
+  /*
+  .main-header {
+      height: auto;
+  }
+  
+  .main-header__title {
+      line-height: $header-height-small;
+      float: none;
+  }
+  */
+  .main-footer__menu {
+    line-height: 50px;
+    float: none; } }
+.nav-menu-list {
+  clear: both;
+  font-size: 14pt; }
+
+.nav-menu__label {
+  color: #FAFAFA; }
+
+.nav-menu__button {
+  display: inline-block;
+  width: 100px;
+  color: #44E3BB;
+  font-weight: 600; }
+  .nav-menu__button:hover {
+    color: #FAFAFA; }
+
+@media (max-width: 480px) {
+  .nav-menu__button {
+    display: block;
+    width: auto;
+    text-align: center;
+    font-size: 20pt; } }
 .contact-list {
   clear: both;
   font-size: 14pt; }
@@ -69,7 +121,7 @@ a {
 .contact-list__button {
   display: inline-block;
   width: 100px;
-  color: #9CEDBB;
+  color: #44E3BB;
   font-weight: 600; }
   .contact-list__button:hover {
     text-decoration: underline; }
@@ -80,7 +132,7 @@ a {
     width: auto;
     text-align: center; } }
 .splash__title {
-  color: #9CEDBB;
+  color: #44E3BB;
   text-align: center;
   font-size: 75pt;
   margin-top: 100px;
@@ -129,7 +181,7 @@ a {
   font-size: 24px;
   transition: background-color .13s ease; }
   .image-button:hover {
-    background-color: #9CEDBB; }
+    background-color: #44E3BB; }
 
 .image-button__description {
   opacity: 0;
@@ -147,7 +199,20 @@ a {
   margin: 0; }
 
 .subsection {
-  background-color: #E4E4E4; }
+  background-color: #E4E4E4;
+  padding: 10px; }
+
+.subsection__text {
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 500px; }
+
+.subsection__image {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 400px;
+  display: inline-block;
+  border-radius: 200px; }
 
 /*
 used to center text in a 960px box
