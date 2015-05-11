@@ -1,0 +1,37 @@
+/*.breadcrumb li {
+    list-style: none;
+    &::after {
+        content: " > ";
+    }
+    &:last-child::after {
+        content: "";
+    }
+}
+
+.breadcrumb__item {
+    
+    display: inline;
+    color: $green;
+    
+    &:hover {
+        color: $black;
+    }
+}*/
+
+.breadcrumb__item{
+    display: inline;
+    list-style: none;
+    &::after {
+        content: " > ";
+    }
+    &:last-child::after {
+        content: "";
+    }
+}
+
+.breadcrumb__item > a {
+    color: $green;
+    &:hover {
+        color: $black;
+    }
+}

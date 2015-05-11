@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "RIT"
+AuthBasicProvider ldap
+SSLRequireSSL
+AuthLDAPUrl ldaps://ldap.rit.edu/ou=people,dc=rit,dc=edu?uid?sub
+AuthzLDAPAuthoritative off
+require valid-user

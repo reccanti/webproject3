@@ -1,0 +1,38 @@
+// A template with an image on the right and text vertically centered next to the image on the left
+.text-with-image {
+    display: flex;
+    align-items: center;
+}
+
+.text-with-image__text {
+    display: inline-block;
+    max-width: 500px;
+}
+
+.text-with-image__image {
+    display: inline-block;
+    max-width: 400px;
+    margin-left: 50px;
+    width: 100%;
+    height: auto;
+    border-radius: 200px;
+}
+
+@media (max-width: $mid-width) {
+    
+    .text-with-image {
+        flex-direction: column;
+    }
+    
+    .text-with-image__text {
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    .text-with-image__image {
+        display: inline-block;
+        max-width: 400px;
+        width: 100%;
+        margin-left: 0;
+    }
+}

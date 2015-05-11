@@ -12,12 +12,65 @@ module.exports = function(grunt) {
                 expand: true,
                 src: '**.html',
                 dest: 'production/'
+            },
+            projects: {
+                /*
+                expand: true,
+                src: 'projects/**.html',
+                dest: 'production/'
+                */
+                files: [
+                    {
+                        expand: true, 
+                        src: 'projects/**.html', 
+                        dest: 'production/'
+                    },
+                    {
+                        expand: true, 
+                        src: 'projects/**.shtml', 
+                        dest: 'production/'
+                    }
+                ]
+            },
+            notes: {                
+                expand: true,
+                src: 'notes/**',
+                dest: 'production/'
+            },
+            SSI: {   
+                /*
+                expand: true,
+                src: 'SSI/**.html',
+                dest: 'production/'
+                */
+                files: [
+                    {
+                        expand: true, 
+                        src: 'SSI/**.html', 
+                        dest: 'production/'
+                    },
+                    {
+                        expand: true, 
+                        src: 'SSI/**.shtml', 
+                        dest: 'production/'
+                    }
+                ]
+            },
+            vendors: {
+                files: [
+                    {
+                        expand: true, 
+                        flatten: true,
+                        src: 'bower_components/jquery/dist/jquery.min.js', 
+                        dest: 'production/scripts/vendors/jquery/'
+                    }
+                ]
             }
         },
         image_resize: {
             buttons: {
                 options: {
-                    width: 300
+                    width: 480
                 },
                 src: 'images/buttons/**.png',
                 dest: 'production/images/buttons/'
@@ -37,12 +90,26 @@ module.exports = function(grunt) {
                     'production/css/style.css': 'sass/main.scss'
                 }
             }
+        },
+        bowercopy: {
+            options: {
+                srcPrefix: './bower_components'
+            },
+            vendors: {
+                options: {
+                    destPrefix: 'production/scripts/vendors'
+                },
+                files: {
+                    'jquery/dist/jquery.min.js': 'jquery/jquery.min.js'
+                }
+            }
         }
     });
     
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-image-resize');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    //grunt.loadNpmTasks('grunt-bowercopy');
     
     grunt.registerTask('buttons', ['image_resize:buttons']);
     grunt.registerTask('views', ['image_resize:views']);

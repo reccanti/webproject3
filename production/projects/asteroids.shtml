@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Asteroids -- Ben Wilcox's Web Portfolio</title>
+        <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!-- header -->
+        <!--#include virtual="/bjw3376/230/portfolio/SSI/project-header.html"-->
+        
+        <!-- content -->
+        <article class="main-content">
+            <ul class="breadcrumb">
+                <li class="breadcrumb__item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb__item"><a href="../index.html#projects">Projects</a></li>                 <li class="breadcrumb__item">Asteroids</li>
+            </ul>
+            <h2 class="main-content__title">Asteroids</h2>
+            <div class="main-content__section">
+                <p>
+                    This was an assignment that I did using Processing. The goal was to make a game that was modeled after the classic game Asteroids and made use of collision detection. I kept the basic game largely intact. The player controls the ship and avoids the asteroids. They can fire bullets which destroy the asteroids or break them into smaller pieces. Destroying all of the asteroids brings you to the next level, which has more asteroids to destroy. 
+                </p>
+                <p>
+                    For the design, I decided to go for a sketchbook look. The idea of shooting asteroids is kind of like a daydream, and I wanted the design to give the feeling of someone absentmindedly doodling while imagining that. 
+                </p>
+                <p>
+                    I tried to keep the UI minimal, as I didn't want to distract from the gameplay or the visuals. I only included 3 values: the current level, the number of asteroids destroyed, and the number of shots fired. I chose these values because I felt like they gave the player a sense of progression and accomplishment. "How long have I been playing?" "Long enough to destroy 300 asteroids!" "Am I getting better?" "I made it to level 5 this time!" Furthermore, shots fired and Asteroids destoyed could be combined to give a rough estimate of the player's skill.
+                </p>
+                <img class="main-content__image--big" src="../images/views/Asteroids.png" alt="Asteroids image" width="960" height="712" />
+                Last Modified: <!--#echo var="LAST_MODIFIED"-->
+                </div>
+        </article>
+        <!--#include virtual="/bjw3376/230/portfolio/SSI/project-footer.shtml"-->
+    </body>
+</html>

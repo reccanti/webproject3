@@ -1,0 +1,33 @@
+.main-content {
+    //clear: both;
+    padding: 50px;
+    background-color: $white;
+}
+
+.main-content--hidden {
+    display: none;
+}
+
+.main-content__gray {
+    //clear: both;
+    background-color: $lightGray;
+}
+
+.main-content__section {
+    margin: 0 auto;
+    max-width: $max-width;
+}
+
+.main-content p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main-content__title {
+    font-size: 30pt;
+    margin-bottom: 20px;
+}
+
+.main-content__image--big {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'oswaldbold';
+  src: url("oswald-bold-webfont.eot");
+  src: url("oswald-bold-webfont.eot?#iefix") format("embedded-opentype"), url("oswald-bold-webfont.woff2") format("woff2"), url("oswald-bold-webfont.woff") format("woff"), url("oswald-bold-webfont.ttf") format("truetype"), url("oswald-bold-webfont.svg#oswaldbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /* base styling */
 * {
   margin: 0;
@@ -7,7 +13,7 @@
   text-decoration: none; }
 
 body {
-  background-color: #FAFAFA; }
+  background-color: #333333; }
 
 p {
   margin-top: 10px;
@@ -17,10 +23,10 @@ a {
   text-decoration: none;
   color: #44E3BB; }
 
-.main-header {
+#main-header {
   background-color: #333333;
-  padding-left: 10px;
-  padding-right: 10px;
+  height: 100px;
+  border-bottom: 4px solid #333333;
   color: #FAFAFA;
   font-size: 25pt; }
 
@@ -29,7 +35,8 @@ a {
   vertical-align: middle;
   display: inline-block;
   color: #FAFAFA;
-  font-size: 25pt;
+  font-size: 20pt;
+  padding-left: 10px;
   float: left; }
   .main-header__title:hover {
     color: #44E3BB; }
@@ -40,20 +47,148 @@ a {
   vertical-align: middle;
   float: right; }
 
-@media (max-width: 760px) {
-  .main-header {
+@media (max-width: 480px) {
+  #main-header {
     height: auto; }
 
   .main-header__title {
     line-height: 50px;
-    float: none; }
+    float: none;
+    font-size: 30pt;
+    padding: 10px 0 10px 10px; }
 
   .main-header__menu {
-    line-height: header-height-small;
+    line-height: 50px;
     float: none; } }
-.main-content {
+.nav-menu-list {
   clear: both;
+  font-size: 14pt; }
+
+.nav-menu__label {
+  color: #FAFAFA; }
+
+.nav-menu__button {
+  display: inline-block;
+  width: 80px;
+  color: #44E3BB;
+  background-color: #333333;
+  font-weight: 600;
+  text-align: center; }
+  .nav-menu__button:hover {
+    color: #FAFAFA; }
+
+/*
+@media (max-width: $mid-width) {
+    
+    .nav-menu__button {
+        //line-height: 50px;
+    }
+    
+    
+}
+*/
+@media (max-width: 480px) {
+  .nav-menu__button {
+    display: block;
+    width: auto;
+    text-align: center;
+    font-size: 20pt;
+    background-color: black; } }
+/*
+ * Defines elements for a standard form. Can be used for a variety of contexts
+ */
+.form {
+  margin: 20px 0 20px 0;
+  background-color: #333333;
+  border-radius: 5px;
+  padding: 50px;
+  max-width: 960px; }
+
+.form--hidden {
+  display: none; }
+
+.form__title {
+  color: #FAFAFA;
+  font-size: 30pt; }
+
+.form__text {
+  width: 100%;
+  border-style: none;
+  height: 30px;
+  font-size: 14pt;
+  border-radius: 5px; }
+
+.form__textarea {
+  width: 100%;
+  height: 300px;
+  border-style: none;
+  font-size: 14pt;
+  border-radius: 5px;
+  padding: 5px; }
+
+.form__button {
+  width: 100px;
+  height: 50px;
+  border: 0;
+  background-color: #44E3BB;
+  color: #FAFAFA;
+  font-size: 14pt;
+  border-radius: 5px; }
+  .form__button:hover {
+    background-color: #FAFAFA;
+    color: #333333; }
+
+.form__label {
+  font-size: 14pt;
+  color: #FAFAFA; }
+
+.form__section {
+  padding: 10px 0 10px 0; }
+
+@media (max-width: 480px) {
+  .form {
+    padding: 20px; } }
+.slider {
+  text-align: center;
+  display: inline-block;
+  background-color: #333333;
+  border: 2px solid #333333;
+  border-radius: 5px; }
+
+.slider__button {
+  background-color: #333333;
+  height: 50px;
+  width: 100px;
+  font-size: 14pt;
+  color: #44E3BB;
+  border: 0; }
+  .slider__button:hover {
+    background-color: #44E3BB;
+    color: #333333; }
+
+.slider__button--left {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; }
+
+.slider__button--right {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+.slider__button--active {
   background-color: #FAFAFA;
+  color: #333333; }
+
+.main-content {
+  padding: 50px;
+  background-color: #FAFAFA; }
+
+.main-content--hidden {
+  display: none; }
+
+.main-content__gray {
+  background-color: #E4E4E4; }
+
+.main-content__section {
   margin: 0 auto;
   max-width: 960px; }
 
@@ -62,11 +197,76 @@ a {
   margin-bottom: 10px; }
 
 .main-content__title {
-  margin-top: 20px;
+  font-size: 30pt;
   margin-bottom: 20px; }
 
-.main-footer {
-  background-color: #333333;
+.main-content__image--big {
+  max-width: 100%;
+  height: auto; }
+
+/*.breadcrumb li {
+    list-style: none;
+    &::after {
+        content: " > ";
+    }
+    &:last-child::after {
+        content: "";
+    }
+}
+
+.breadcrumb__item {
+    
+    display: inline;
+    color: $green;
+    
+    &:hover {
+        color: $black;
+    }
+}*/
+.breadcrumb__item {
+  display: inline;
+  list-style: none; }
+  .breadcrumb__item::after {
+    content: " > "; }
+  .breadcrumb__item:last-child::after {
+    content: ""; }
+
+.breadcrumb__item > a {
+  color: #44E3BB; }
+  .breadcrumb__item > a:hover {
+    color: #333333; }
+
+.text-with-image {
+  display: flex;
+  align-items: center; }
+
+.text-with-image__text {
+  display: inline-block;
+  max-width: 500px; }
+
+.text-with-image__image {
+  display: inline-block;
+  max-width: 400px;
+  margin-left: 50px;
+  width: 100%;
+  height: auto;
+  border-radius: 200px; }
+
+@media (max-width: 760px) {
+  .text-with-image {
+    flex-direction: column; }
+
+  .text-with-image__text {
+    display: inline-block;
+    max-width: 100%; }
+
+  .text-with-image__image {
+    display: inline-block;
+    max-width: 400px;
+    width: 100%;
+    margin-left: 0; } }
+#main-footer {
+  background-color: black;
   color: #FAFAFA;
   vertical-align: middle;
   padding: 10px; }
@@ -90,27 +290,6 @@ a {
   .main-footer__menu {
     line-height: 50px;
     float: none; } }
-.nav-menu-list {
-  clear: both;
-  font-size: 14pt; }
-
-.nav-menu__label {
-  color: #FAFAFA; }
-
-.nav-menu__button {
-  display: inline-block;
-  width: 100px;
-  color: #44E3BB;
-  font-weight: 600; }
-  .nav-menu__button:hover {
-    color: #FAFAFA; }
-
-@media (max-width: 480px) {
-  .nav-menu__button {
-    display: block;
-    width: auto;
-    text-align: center;
-    font-size: 20pt; } }
 .contact-list {
   clear: both;
   font-size: 14pt; }
@@ -131,18 +310,26 @@ a {
     display: block;
     width: auto;
     text-align: center; } }
+.splash {
+  background-color: #FAFAFA;
+  padding: 50px; }
+
 .splash__title {
   color: #44E3BB;
   text-align: center;
-  font-size: 75pt;
-  margin-top: 100px;
-  margin-bottom: 100px; }
+  font-size: 80pt;
+  letter-spacing: 0.01em;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Oswald";
+  font-weight: 800; }
 
 .splash__tagline {
   text-align: center;
   font-weight: 400;
   font-style: italic;
-  margin-bottom: 100px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
 
 @media (max-width: 760px) {
   .splash__title {
@@ -155,11 +342,14 @@ a {
 .block-list {
   box-sizing: border-box;
   background-color: #333333;
-  text-align: center; }
+  text-align: center;
+  padding: 50px; }
 
 .block-list__title {
   color: #FAFAFA;
-  font-size: 30pt; }
+  font-size: 30pt;
+  margin: 25px;
+  margin-top: 0px; }
 
 /*
 .block-list__button {
@@ -180,39 +370,55 @@ a {
   font-weight: bold;
   font-size: 24px;
   transition: background-color .13s ease; }
-  .image-button:hover {
-    background-color: #44E3BB; }
 
 .image-button__description {
   opacity: 0;
-  background-color: gray;
+  background-color: #44E3BB;
   position: absolute;
-  top: 10px;
-  width: 300px;
-  height: 300px;
-  padding-left: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  text-align: left;
   transition: opacity .13s ease; }
   .image-button__description:hover {
-    opacity: 0.9; }
+    opacity: 1.0; }
 
 .image-button__title {
-  margin: 0; }
+  padding: 10px 0 10px 0; }
 
+@media (max-width: 480px) {
+  .block-list {
+    padding: 0;
+    padding-top: 10px; }
+
+  .image-button {
+    width: 100%;
+    padding: 0; }
+
+  .image-button__image {
+    width: 100%;
+    height: auto; } }
 .subsection {
   background-color: #E4E4E4;
   padding: 10px; }
 
 .subsection__text {
-  display: inline-block;
   margin: 0 auto;
-  max-width: 500px; }
+  vertical-align: middle;
+  max-width: 960px; }
 
 .subsection__image {
   margin: 0 auto;
   text-align: center;
   max-width: 400px;
-  display: inline-block;
-  border-radius: 200px; }
+  width: 100%;
+  height: auto;
+  float: right;
+  vertical-align: middle;
+  border-radius: 200px;
+  margin: 25px; }
 
 /*
 used to center text in a 960px box

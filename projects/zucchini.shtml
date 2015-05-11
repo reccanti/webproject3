@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sneak Some Zucchini Onto Your Neighbor's Porch Night -- Ben Wilcox's Web Portfolio</title>
+        <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+
+        <!-- header bar -->
+        <!--#include virtual="/bjw3376/230/portfolio/SSI/project-header.html"-->
+
+        
+        <!-- content -->
+        <article class="main-content">
+            <ul class="breadcrumb">
+                <li class="breadcrumb__item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb__item"><a href="../index.html#projects">Projects</a></li>                         <li class="breadcrumb__item">Sneak some Zucchini Onto Your Neighbor's Porch Night</li>
+            </ul>
+            <h2 class="main-content__title">Sneak Some Zucchini Onto Your Neighbor's Porch Night</h2>
+            <div class="main-content__section">
+                <p>
+                    As an assignment for class, I was tasked with making a web page for an event. The event I chose was the holiday Sneak Some Zucchini Onto Your Neighbor's Porch Night. I went through a thorough process to create it, involving mood boards, style tiles, and peer review. a more detailed examination of the process can be found <a href="https://www.behance.net/gallery/24931889/Zucchini">here</a>.
+                </p>
+                <img class="main-content__image--big" src="../images/views/zucchini.png" alt="Asteroids image" width="960" height="2160" />
+                Last Modified: <!--#echo var="LAST_MODIFIED"-->
+            </div>
+        </article>
+        
+        <!--#include virtual="/bjw3376/230/portfolio/SSI/project-footer.shtml"-->
+    </body>
+</html>

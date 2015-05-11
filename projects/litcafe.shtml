@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Litcafe -- Ben Wilcox's Web Portfolio</title>
+        <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!-- header bar -->
+        <!--#include virtual="/bjw3376/230/portfolio/SSI/project-header.html"-->
+
+        
+        <!-- content -->
+        <article class="main-content">
+            <ul class="breadcrumb">
+                <li class="breadcrumb__item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb__item"><a href="../index.html#projects">Projects</a></li>                 <li class="breadcrumb__item">Litcafe</li>
+            </ul>
+            <h2 class="main-content__title">Litcafe</h2>
+            <div class="main-content__section">
+                <p>
+                    This is an app concept I came up with as part of one of my classes. The app would part of a larger social media platform that allows users to establish reading groups, where they can then make notes on the text and have group discussions.
+                </p>
+                <p>
+                    The idea for this app came about because I was having trouble finding time to read. I figured that if I was reading with a group and had a place to discuss what I read, I would have an incentive to keep reading.
+                </p>
+                <p>
+                    The documents were made in a combination of Adobe Photoshop and Illustrator. I used Illustrator to create the icon. I wanted to emphasize the idea of talking about books, so the icon is simply a book in a speech bubble. The mockups were made in Photoshop and are based on the standard iOS layout. I wanted it to feel like a traditional reading app. The comment system works similar to Google Docs, in which a User can highlight a piece of text and have that be seen by everyone in the group. The User can also add a comment to this highlight, and is only displayed when the user taps it. The group chat function is similar to the format of the several messaging apps available on the market.
+                </p>
+                <img class="main-content__image--big" src="../images/views/LitcafeBanner.png" alt="Litcafe image" width="960" height="621" />
+                Last Modified: <!--#echo var="LAST_MODIFIED"-->
+            </div>
+        </article>
+        
+        <!--#include virtual="/bjw3376/230/portfolio/SSI/project-footer.shtml"-->
+    </body>
+</html>

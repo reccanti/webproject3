@@ -1,0 +1,14 @@
+<!-- footer -->
+<footer id="main-footer">
+    &copy; <!--#config timefmt="%Y"--><!--#echo var="DATE_LOCAL"--> Ben Wilcox -- Phone: (413) 579-7376 or <a href="../about.html">email me</a>
+    <br />
+    <a href="../notes/notes.html">Notes</a>
+    <div class="main-footer__menu contact-list">
+        <!--<p>find me on</p>-->
+        <a class="contact-list__button" href="https://linkedin.com/in/benwilcox93/en">linkedin</a>
+        <!--<a href="https://twitter.com/reccanti">twitter</a>-->
+        <a class="contact-list__button" href="http://codepen.io/recanti/">codepen</a>
+        <a class="contact-list__button" href="https://github.com/recanti">github</a>
+        <a class="contact-list__button" href="https://behance.net/reccanti">behance</a>
+    </div>
+</footer>

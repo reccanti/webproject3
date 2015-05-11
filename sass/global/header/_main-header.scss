@@ -1,0 +1,52 @@
+#main-header {
+    background-color: $black;
+    //height: 100px;
+    height: $header-height;
+    //padding-left: 10px;
+    //padding-right: 10px;
+    
+    border-bottom: 4px solid $black;
+    
+    color: $white;
+    font-size: 25pt;
+}
+
+.main-header__title {
+    line-height: $header-height;
+    vertical-align: middle;
+    display: inline-block;
+    color: $white;
+    font-size: 20pt;
+    padding-left: 10px;
+    float: left;
+    //max-width: 960px;
+    
+    &:hover {
+        color: $green;
+    }
+}
+
+.main-header__menu {
+    font-size: 14pt;
+    line-height: $header-height;
+    vertical-align: middle;
+    float: right;
+}
+
+@media (max-width: $small-width) {
+
+    #main-header {
+        height: auto;
+    }
+    
+    .main-header__title {
+        line-height: $header-height-small;
+        float: none;
+        font-size: 30pt;
+        padding: 10px 0 10px 10px;
+    }
+    .main-header__menu {
+        line-height: $header-height-small;
+        float: none;
+    }
+}

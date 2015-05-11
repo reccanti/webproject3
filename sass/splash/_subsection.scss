@@ -1,0 +1,24 @@
+.subsection {
+    background-color: $lightGray;
+    padding: 10px;
+}
+
+.subsection__text {
+    //display: inline-block;
+    margin: 0 auto;
+    vertical-align: middle;
+    max-width: 960px;
+}
+
+.subsection__image {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    //display: inline-block;
+    float: right;
+    vertical-align: middle;
+    border-radius: 200px;
+    margin: 25px;
+}

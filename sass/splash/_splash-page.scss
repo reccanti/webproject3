@@ -1,0 +1,40 @@
+.splash {
+    background-color: $white;
+    padding: 50px;
+}
+
+.splash__title {
+    color: $green;
+    text-align: center;
+    font-size: 80pt;
+    letter-spacing: 0.01em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    //font-family: "Building";
+    font-family: "Oswald";
+    font-weight: 800;
+}
+
+.splash__tagline {
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: $mid-width) {
+
+    .splash__title {
+        text-align: center;
+        font-size: 50pt;
+    }
+}
+
+@media (max-width: $small-width) {
+
+    .splash__title {
+        text-align: center;
+        font-size: 30pt;
+    }
+}

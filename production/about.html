@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ben Wilcox's Web Portfolio</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script src="./scripts/vendors/jquery/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var isAbout = true;
+                $('#aboutButton').on('click', function() {
+                    if (isAbout !== true) {
+                        
+                        // change the slider
+                        $('#aboutButton').toggleClass('slider__button--active');
+                        $('#contactButton').toggleClass('slider__button--active');
+                        
+                        // change the currently displayed section
+                        $('#aboutSection').toggleClass('main-content--hidden');
+                        $('#contactForm').toggleClass('form--hidden');
+                        
+                        isAbout = true;
+                    }
+
+                });
+                $('#contactButton').on('click', function() {
+                    if (isAbout !== false) {
+                        
+                        // change the slider
+                        $('#contactButton').toggleClass('slider__button--active');
+                        $('#aboutButton').toggleClass('slider__button--active');
+                                                
+                        // change the currently displayed section
+                        $('#aboutSection').toggleClass('main-content--hidden');
+                        $('#contactForm').toggleClass('form--hidden');
+                        
+                        isAbout = false;
+                    }
+
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!-- header bar -->
+        <header id="main-header">
+            <a href="index.html"><h2 class="main-header__title">Ben Wilcox</h2></a>
+            <div class="main-header__menu nav-menu">
+                <a class="nav-menu__button" href="index.html#projects">Projects</a>
+                <a class="nav-menu__button" href="about.html">About</a>
+            </div>
+            <div class="spacer"></div>
+        </header>
+
+        <!-- about section -->
+        <article class="main-content main-content__gray">
+            
+            <!-- slider switch -->
+            <div class="slider">
+                <button id="aboutButton" class="slider__button slider__button--left slider__button--active">About</button>
+                <button id="contactButton" class="slider__button slider__button--right">Contact</button>
+            </div>
+            <ul class="breadcrumb">
+                <li class="breadcrumb__item"><a href="index.html">Home</a></li>                                         <li class="breadcrumb__item">About</li>
+            </ul>
+            <h2 class="main-content__title">About Me</h2>
+            <section id="aboutSection" class="main-content__section">
+                <h2>Bio</h2>
+                <figure class="text-with-image">
+                    <figcaption class="text-with-image__text">
+                        <p>
+                            I have always been passionate about art and technology. For as long as I can remember, I have been drawing and playing with cool gadgets. For me, working on projects that combine these two interests is the most rewarding experience
+                        </p>
+                        <p>
+                            I think the web is one of the best places to explore these possibilities. Different design trends are constantly emerging, and there's always a different piece of technology to learn about. Plus, it's fun and easy to create new things and share them with the world. A more detailed account of my skills can be found in my <a href="./images/BenWilcoxResume.pdf">resume</a>.
+                        </p>
+                        <p>
+                            In between working on projects, I am also an avid drinker of coffee. When I am not working, I enjoy running, cooking, and drawing.
+                        </p>
+                    </figcaption>
+                    <img class="text-with-image__image" src="images/about/selfie.jpg" alt="a picture of me" width="400" height="400" />
+                </figure>
+            </section>
+            
+            <!-- email form -->
+            <form id="contactForm" class="form form--hidden" method="post" action="formmail.php" name="EmailForm">
+                <h3 class="form__title">Contact Me</h3>
+                <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+                <input type="hidden" name="recipients" value="benjaminwilcox93@gmail.com" />
+                <!-- email field -->
+                <div class="form__section">
+                    <label for="emailInput" class="form__label">Email</label>
+                    <input id="emailInput" name="email" class="form__text" type="text" />
+                </div>      
+                <!-- message area -->
+                <div class="form__section">
+                    <label for="emailMessage" class="form__label">Message</label>
+                    <textarea id="emailMessage" name="message" class="form__textarea">Write message here...</textarea>
+                </div>
+                
+                <input class="form__button" type="submit" value="Submit">
+            </form>
+        </article>
+                    
+        <!-- footer -->
+        <footer id="main-footer">
+            &copy; 2015 Ben Wilcox -- Phone: (413) 579-7376 or <a href="../about.html">email me</a>
+            <br />
+            <a href="notes/notes.html">Notes</a>
+            <div class="main-footer__menu contact-list">
+                <!--<p>find me on</p>-->
+                <a class="contact-list__button" href="https://linkedin.com/in/benwilcox93/en">linkedin</a>
+                <!--<a href="https://twitter.com/reccanti">twitter</a>-->
+                <a class="contact-list__button" href="http://codepen.io/recanti/">codepen</a>
+                <a class="contact-list__button" href="https://github.com/recanti">github</a>
+                <a class="contact-list__button" href="https://behance.net/reccanti">behance</a>
+            </div>
+        </footer>
+    </body>
+</html>

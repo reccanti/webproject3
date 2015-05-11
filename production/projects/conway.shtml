@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Conway's Game of Life -- Ben Wilcox's Web Portfolio</title>
+        <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!-- header -->
+        <!--#include virtual="/bjw3376/230/portfolio/SSI/project-header.html"-->
+
+        
+        <!-- content -->
+        <article class="main-content">
+            <ul class="breadcrumb">
+                <li class="breadcrumb__item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb__item"><a href="../index.html#projects">Projects</a></li>                 <li class="breadcrumb__item">Conway</li>
+            </ul>
+            <h2 class="main-content__title">Conway's Game of Life</h2>
+            <div class="main-content__section">
+                <p>
+                    This is a side-project made using the HTML5 Canvas. Having never used the canvas before, I made this in order to get familiar with it. It was also one of my first projects to use a significant amount of Javascript.
+                </p>
+                <p>
+                    In terms of style, I wanted it to have an old-school video game feel. I used <a href="http://blueamnesiac.deviantart.com/art/Game-Boy-Pocket-4-Color-Palettes-296712730">BLUEamnesiac's Game Boy Pocket color palettes</a>.
+                </p>
+
+                <!-- the canvas -->
+                <canvas id="myCanvas" width="300" height="300" style="border: 1px solid #000000;"></canvas><br />
+                <button type="button" id="randomize">Randomize</button><br />
+
+
+                Last Modified: <!--#echo var="LAST_MODIFIED"-->
+
+                <!-- various scripts -->
+                <script type="text/javascript" src="scripts/Conway/Board.js"></script>
+                <script type="text/javascript" src="scripts/Conway/GameLogic.js"></script>
+                <!--<script type="text/javascript" src="Scripts/ImageTile.js"></script>-->
+                <script type="text/javascript" src="scripts/Conway/Display.js"></script>
+                <script type="text/javascript" src="scripts/Conway/main.js"></script>
+            </div>
+        </article>
+        
+        <!--#include virtual="/bjw3376/230/portfolio/SSI/project-footer.shtml"-->
+    </body>
+</html>

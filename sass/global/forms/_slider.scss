@@ -1,0 +1,36 @@
+.slider {
+    text-align: center;
+    display: inline-block;
+    background-color: $black;
+    border: 2px solid $black;
+    border-radius: 5px;
+}
+
+.slider__button {
+    background-color: $black;
+    height: 50px;
+    width: 100px;
+    font-size: 14pt;
+    color: $green;
+    border: 0;
+    
+    &:hover {
+        background-color: $green;
+        color: $black;
+    }
+}
+
+.slider__button--left {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.slider__button--right {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.slider__button--active {
+    background-color: $white;
+    color: $black;
+}

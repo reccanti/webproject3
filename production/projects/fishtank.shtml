@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Unity Fish Tank -- Ben Wilcox's Web Portfolio</title>
+        <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        
+        <!-- header bar -->
+        <!--#include virtual="/bjw3376/230/portfolio/SSI/project-header.html"-->
+
+        
+        <!-- content -->
+        <article class="main-content">
+            <ul class="breadcrumb">
+                <li class="breadcrumb__item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb__item"><a href="../index.html#projects">Projects</a></li>                         <li class="breadcrumb__item">Fishtank</li>
+            </ul>
+            <h2 class="main-content__title">Unity Fishtank</h2>
+            <div class="main-content__section">            
+                <p>
+                    This interactive fishtank was a project I did for one of my classes. The User can interact with the fish in the tank by clicking on them. Each fish has an affection rating, which increases or decreases based on where you click it. When a fish reaches a high enough affection, it will reproduce and split into two fish. However, if its affection is too low, it will get angry and try to eat the other fish in the tank.
+                </p>
+                <p>
+                    My goal was to create an application that didn't demand any interaction from the User. The User would be free to click on the fish at any point and curate their tank, but they could just as easily sit back and watch the fish float around the tank. 
+                </p>
+                <p>
+                    Visually, the game was inspired by the game Seaman. While giving fish human faces seemed like a strange choice, I feel like it payed off overall. The different faces gave each of the fish more of a personality, and the strangeness of the whole situation was attention-getting. Clicking on the fish became a lot more fun when you got to see their reactions afterward.
+                </p>
+                <img class="main-content__image--big" src="../images/views/Fishtank.png" alt="Fishtank image" width="960" height="719" />
+                Last Modified: <!--#echo var="LAST_MODIFIED"-->
+            </div>
+        </article>
+        
+        <!--#include virtual="/bjw3376/230/portfolio/SSI/project-footer.shtml"-->
+    </body>
+</html>

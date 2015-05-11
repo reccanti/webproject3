@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kingdom Hearts Timeline -- Ben Wilcox's Web Portfolio</title>
+        <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        
+        <!-- header bar -->
+        <!--#include virtual="/bjw3376/230/portfolio/SSI/project-header.html"-->
+
+        
+        <!-- content -->
+        <article class="main-content">
+            <ul class="breadcrumb">
+                <li class="breadcrumb__item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb__item"><a href="../index.html#projects">Projects</a></li>                 <li class="breadcrumb__item">Kingdom Hearts Timeline</li>
+            </ul>
+            <h2 class="main-content__title">Kingdom Hearts Timeline</h2>
+            <div class="main-content__section">            
+                <p>
+                    This Kingdom Hearts timeline was part of a project I did for another class. It displays the games in the series in both release order, and chronological order. I wanted to make this web-app because when people ask me about the series, they are often confused as to the order of the series. This was made to provide an easy way to see where each game in the series takes place.
+                </p>
+                <p>
+                    The data for each game was stored in a JSON file. The file was loaded with AJAX and javascript was used to sort them based on their release order, or their chronological order. Pressing a button would change this ordering, which was visually depicted using a CSS transition. Button presses utilized the <a href="https://github.com/asyncly/EventEmitter2">EventEmitter library</a>.
+                </p>
+                <p>
+                    You can view the final project <a href="https://people.rit.edu/bjw3376/iimproject/timeline.html">here.</a>
+                </p>
+                <img class="main-content__image--big" src="../images/views/KingdomHearts.png" alt="Kingdom Hearts Timeline image" width=960 height=489 />
+                Last Modified: <!--#echo var="LAST_MODIFIED"-->
+            </div>
+        </article>
+        
+        <!--#include virtual="/bjw3376/230/portfolio/SSI/project-footer.shtml"-->
+    </body>
+</html>

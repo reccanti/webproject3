@@ -1,15 +1,27 @@
-@import 'variables';
+@import 'global/variables/variables';
 
-@import 'reset';
+@import 'defaults';
 
-@import 'main-header';
-@import 'main-content';
-@import 'main-footer';
+//header items
+@import 'global/header/main-header';
+@import 'global/header/nav-menu';
 
-@import 'nav-menu';
-@import 'contact-list';
-@import 'splash-page';
-@import 'block-list';
-@import 'subsection';
+//forms
+@import 'global/forms/form';
+@import 'global/forms/slider';
 
-@import 'shame';
+//content items
+@import 'global/content/main-content';
+@import 'global/content/breadcrumbs';
+@import 'global/content/text-with-image';
+
+//footer items
+@import 'global/footer/main-footer';
+@import 'global/footer/contact-list';
+
+//splash page specific items
+@import 'splash/splash-page';
+@import 'splash/block-list';
+@import 'splash/subsection';
+
+@import 'shame/shame';
